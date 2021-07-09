@@ -18,6 +18,9 @@
 #
 # ---- WRITE CODE BELOW ---- #
 
+first_name = input(' >> first name... ')
+last_name = input(' >> last name... ')
+print(last_name, first_name)
 
 #   2. Pyramid
 #       a. Prompt input from the user in the form of a single character. Save to a variable named symbol.
@@ -34,7 +37,12 @@
 #   $
 #
 # ---- WRITE CODE BELOW ---- #
-
+symbol = input('enter symbol: ')
+print(symbol * 1)
+print(symbol * 2)
+print(symbol * 3)
+print(symbol * 2)
+print(symbol * 1)
 
 #   3. Parallelogram
 #       a. Prompt input from the user in the form of a single character. Save to a variable named symbol.
@@ -48,11 +56,25 @@
 #   @@
 #   @@@
 #   @@@@
-#    @@@
+#    @@@ 
 #     @@
 #      @
 #
 # ---- WRITE CODE BELOW ---- #
+symbol = input('enter symbol: ')
+print(symbol * 1)
+print(symbol * 2)
+print(symbol * 3)
+print(symbol * 4)
+print(" "*3 + symbol * 3)
+print("  "*2 + symbol * 2)
+print("   "*1 + symbol * 1)
+
+#the last three lines of this shape are made up of spaces AND symbols.
+#in total there are four characters on each line (characters meaning spaces and symbols)
+#if you have three symbols on one line, you'll want to have one space before them. if you have two symbols on a line, you'll want to have two spaces before them
+
+#basically... num of spaces before symbols + num of symbols = 4
 
 
 # -------------------- Section 2 -------------------- #
@@ -76,6 +98,13 @@
 #   num3 (float) | 21322.4
 #
 # ---- WRITE CODE BELOW ---- #
+num1 = ('>> num1... ')
+num2 = int(input('>> num2... '))
+num3 = float(input('>> num3... '))
+
+print(num1 * 10)
+print(num2 * 10)
+print(num3 * 10)
 
 
 # Objectives:
@@ -91,7 +120,10 @@
 #   diameter = 24.6
 #
 # ---- WRITE CODE BELOW ---- #
-
+num = float(input('>> radius...'))
+diameter = input(radius * 2)
+print()
+print()
 
 # Objectives:
 #   3. Area of a Circle
