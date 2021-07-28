@@ -66,9 +66,9 @@ print(symbol * 1)
 print(symbol * 2)
 print(symbol * 3)
 print(symbol * 4)
-print(" "*3 + symbol * 3)
-print("  "*2 + symbol * 2)
-print("   "*1 + symbol * 1)
+print(" " + symbol * 3) #remove first 3
+print("  " + symbol * 2) #remove first 2
+print("   " + symbol * 1) #remove first 1
 
 #the last three lines of this shape are made up of spaces AND symbols.
 #in total there are four characters on each line (characters meaning spaces and symbols)
@@ -98,7 +98,8 @@ print("   "*1 + symbol * 1)
 #   num3 (float) | 21322.4
 #
 # ---- WRITE CODE BELOW ---- #
-num1 = ('>> num1... ')
+
+num1 = input('>> num1... ')
 num2 = int(input('>> num2... '))
 num3 = float(input('>> num3... '))
 
@@ -120,9 +121,13 @@ print(num3 * 10)
 #   diameter = 24.6
 #
 # ---- WRITE CODE BELOW ---- #
-num = float(input('>> radius...'))
-diameter = input(radius * 2)
-print()
+
+
+radius = float(input('>> radius...'))
+
+diameter = (radius * 2)
+print(radius)
+print(diameter)
 print()
 
 # Objectives:
@@ -143,9 +148,39 @@ print()
 #   area of the circle: 6134.4296
 #
 # ---- WRITE CODE BELOW ---- #
+def area_circle(num):
+  area = 3.14 * num ** 2
+  return area
+
+num =  float(input('enter a radius: '))
+area = area_circle(num)
+print(area)
 
 
 # -------------------- Section 4 -------------------- #
 #
 # Create a conversation with a faux (fake) AI, using input and print().
 # See the example in example.py
+
+
+name = (input("enter your name: "))
+
+print('hello ', name, 'I am Lola the Wellness Robot... how are you feeling today?\n')
+print()
+
+mood = input('How are you feeling today? happy, okay or sad?')
+print("I am feeling very", mood, "today")
+print()
+
+exercises = input('Would you like to do some breathing exercises to lighten up your mood?\n')
+
+
+print('These are the exercises I have recommended for you, please let me know if these fit you the best!\n')
+print()
+
+#you could put \n after each thing in the list so that each thing is on a different line
+print('Breathing techniques\n, Do yoga for 5 minutes\n, Walk outside for 2 minutes\n')
+
+input('That\'s all for today! Would you like to continue another session tomorrow?\n')
+
+

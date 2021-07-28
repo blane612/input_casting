@@ -1,2 +1,2 @@
 language = "undefined"
-run = "python primary.py"
+run = "python secondary.py"
